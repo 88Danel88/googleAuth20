@@ -18,7 +18,7 @@ app.use('/auth',authRoutes)
 
 //index route
 app.get('/',(req, res)=>{
-    console.log('HEY!!!');
+    console.log('APPLICATION IS UP!!!');
     res.render('index');
 });
 
