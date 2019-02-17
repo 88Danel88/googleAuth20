@@ -33,7 +33,7 @@ app.use('/profile', profileRoutes);
 //index route
 app.get('/',(req, res)=>{
     console.log('APPLICATION IS UP!!!');
-    res.render('index');
+    res.render('index',{user: req.user});
 });
 
 //listen to a port
